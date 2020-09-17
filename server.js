@@ -16,6 +16,10 @@ app.get('/list', (req,
     }
 )
 
+app.get('/book-form', (req, res) => {
+    res.render('book-form')
+})
+
 //static file handling
 app.use(express.static('public'))
 
